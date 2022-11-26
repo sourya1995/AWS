@@ -1,0 +1,16 @@
+builspec.yml - builds your code
+appspec.yml - after build, what to do with artifacts?
+
+Load Balancer requires VPC setup
+Routing Tables are used to tell subnets to use created Internet Gateway
+Load Balancer exists in all subnets
+Forward traffic to a group that has both subnets, port, instances
+Assign subnet IDs to instances
+
+AUTOSCALING
+
+assign to subnets, replace instances
+
+ROUTE 53
+Private Subnets + NAT Gateway
+
